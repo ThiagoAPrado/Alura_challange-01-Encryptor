@@ -1,0 +1,215 @@
+/*darkmode*/
+html[data-theme='light'] {
+    --body-bg: #F5F5FF;
+    --body-text: #000000;
+    --header-box: #9999ff;
+    --main-textarea: #ffffff;
+    --textarea-textcolor: #000000;
+    --main-buttonEn: #9999ff;
+    --main-buttonDe: #f0f0f0;
+    --main-buttonCo: #9999ff;
+    --main-buttonShadow: #999;
+    --button-hover: #ffb84d;
+    --footer-box: #cdcdfe;
+    --footer-link: #5d5dff;
+}
+
+html[data-theme='dark'] {
+    --body-bg: #272727;
+    --body-text: #ffffff;
+    --main-textarea: #383838;
+    --textarea-textcolor: #ffffff;
+    --header-box: #121212;
+    --main-buttonEn: #121212;
+    --main-buttonDe: #ffffff;
+    --main-buttonCo: #121212;
+    --main-buttonShadow: #000000;
+    --button-hover: #3cc368;
+    --footer-box: #383838;
+    --footer-link: #5d5dff  ;
+}
+
+/*body*/
+body {
+	font-family: 'Montserrat', sans-serif;
+    background: var(--body-bg);
+    color: var(--body-text);
+}
+
+/*header*/
+header {
+	background: var(--header-box);
+	padding: 30px 10% 30px 10%;
+}
+
+ul li {
+    display: inline;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+li button {
+    margin: -5px 0 0 0;
+}
+
+/*dark mode button*/
+.darkmode {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.35s all;
+    float: right;
+}
+
+.moon {
+    height: 20px;
+    width: 20px;
+}
+
+.darkmode:hover{ 
+    filter: invert(100%);
+}
+
+/*Main*/
+.input {
+    margin: 45px 10% 0 10%;
+}
+
+#alert {
+    display: block;
+}
+
+label {
+    display: inline;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.textinput {
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px 30px;
+    box-shadow: 1px 1px 1px #999;
+    width: 40%;
+    resize: none;
+    background-color: var(--main-textarea);
+    color: var(--textarea-textcolor);
+    font-size: 18px;
+}
+
+.textoutput {
+    float: right;
+    vertical-align: top;
+    padding: 30px 30px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px 30px;
+    box-shadow: 1px 1px 1px #999;
+    resize: none;
+    background-color: var(--main-textarea);
+    color: var(--textarea-textcolor);
+    font-size: 18px;
+    background: url(../imgs/alura.png) no-repeat right;
+    
+}
+
+/*button*/
+.button {
+    margin: 10px 0 0 10%;
+}
+
+.encrypt {
+    width: 175px;
+    height: 45px;
+    border: 1px solid var(--main-buttonEn);
+    border-radius: 30px;
+    background-color: var(--main-buttonEn);
+    color: white;
+    box-shadow: 1px 1px 1px var(--main-buttonShadow);
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.20s all;
+}
+
+.decrypt {
+    width: 175px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: var(--main-buttonDe);
+    margin: 0px 0 0 30px;
+    box-shadow: 1px 1px 1px var(--main-buttonShadow);
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.20s all;
+}
+
+.copy {
+    width: 175px;
+    height: 45px;
+    border: 1px solid var(--main-buttonCo);
+    border-radius: 30px;
+    background-color: var(--main-buttonCo);
+    color: white;
+    box-shadow: 1px 1px 1px var(--main-buttonShadow);
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.20s all;
+    float: right;
+    margin: 0px 11% 0 0;
+}
+
+.decrypt:hover {
+    background-color: var(--button-hover);
+    border: 1px solid var(--button-hover);
+    color: white;
+}
+
+.encrypt:hover, .copy:hover {
+    background-color: var(--button-hover);
+    border: 1px solid var(--button-hover);
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    padding: 18px 0;
+    background: var(--footer-box);
+    text-align: center;
+}
+
+strong {
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--footer-link);
+}
+
+footer a:hover {
+    color: var(--button-hover);
+}
+
+.contact {
+    margin: 0 0 20px 0;
+}
+
+.attribution {
+    font-size: 15px;
+}
+
+.contact p, .attribution p{
+    margin: 0 0 5px 0;
+}

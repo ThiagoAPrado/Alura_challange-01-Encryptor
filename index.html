@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encryptor</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header> 
+            <div class="box">
+                    <ul>
+                        <li class="title">Encryptor</li>
+                        <li><button id="theme-toggle" class="darkmode" onclick="darkMode()"><img class="moon" src="imgs/moon.png"></button></li>
+                    </ul>
+            </div>
+        </header>
+
+
+        <main>
+            <section class="input">
+                <label for="textinput" id="alert">Only lowercase letters and no accents.</label>
+                <textarea type="text" class="textinput" cols="30" rows="10" required placeholder="Type something to encrypt..."></textarea>
+                
+                <label for="textoutput"></label>
+                <textarea disabled class="textoutput" cols="30" rows="10" required placeholder="No encrypted message found"></textarea>
+            </section>
+
+            <section class="button">
+                <button class="encrypt">Encrypt</button>
+                <button class="decrypt">Decrypt</button>
+                <button class="copy">Copy</button>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="contact">
+                <p>Developed by <strong>Thiago A. Prado</strong></p>
+                <a href="https://github.com/ThiagoAPrado" title="See more content">&#128008; GitHub</a><strong> | </strong>
+                <a href="https://www.linkedin.com/in/thiagoaprado" title="See my profile">&#128188; Linkedin</a><strong> | </strong>
+                <a href="mailto:thiagoaprado1702@gmail.com" title="Send me a email">&#128231; Email</a>
+            </div>
+
+            <div class="attribution">
+                <p>Attribution for the artist</p>
+                <a href="https://www.flaticon.com/free-icons/moon" title="moon icons">Moon icons created by Good Ware - Flaticon</a>
+            </div>
+        </footer>
+
+        <script src="js/darkmode.js"></script>
+        <script src="js/encrypt.js"></script>
+        <script src="js/decrypt.js"></script>
+        <script src="js/copy.js"></script>
+        
+    </body>
+</html>
